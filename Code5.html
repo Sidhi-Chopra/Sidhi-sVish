@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Your Crush Out!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7d4e7; /* Light pink */
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1520769689705-aaac9be45a76'); /* Cute background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin-top: 50px;
+        }
+        .button {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff80ab; /* Light pink */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff527d; /* Darker pink */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hey there! 🌟</h1>
+    <div class="question">
+        <p>Would you like to go out on a date with me?</p>
+        <button class="button" onclick="alert('Let\'s get going then <3')">Yes</button>
+        <button class="button" onclick="confirmNo()">No</button>
+    </div>
+
+    <script>
+        function confirmNo() {
+            if (confirm("Are you sure?")) {
+                alert("But you are permanently booked, so you have no option! Let's meet soon <3");
+            }
+        }
+    </script>
+</body>
+</html>
